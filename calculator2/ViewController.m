@@ -21,7 +21,7 @@
     currentValue = 0;
 }
 
--(IBAction)numberbtn:(id)sender{
+-(IBAction)numberBtn:(id)sender{
     
     UIButton *b = (UIButton*) sender;
     if(startInput){
@@ -36,7 +36,7 @@
     }
 }
 
--(IBAction)clearbtn:(id)sender{
+-(IBAction)clearResult:(id)sender:(id)sender{
     
     currentValue = 0;
     LabelText.text = @"0";
