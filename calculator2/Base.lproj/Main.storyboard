@@ -235,7 +235,7 @@
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y1J-KW-d2V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSi-A8-htJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziT-qk-KAp">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="0">
@@ -246,7 +246,7 @@
                                     <rect key="frame" x="34" y="475" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iQ6-UJ-PDo"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jvL-el-lKf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,7 +269,7 @@
                                 <exclude reference="jfz-Zi-SbU"/>
                                 <exclude reference="3KR-SB-4wL"/>
                                 <exclude reference="YTz-yj-N8y"/>
-                                <exclude reference="oSi-A8-htJ"/>
+                                <exclude reference="ziT-qk-KAp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -290,7 +290,7 @@
                                 <include reference="jfz-Zi-SbU"/>
                                 <include reference="3KR-SB-4wL"/>
                                 <include reference="YTz-yj-N8y"/>
-                                <include reference="oSi-A8-htJ"/>
+                                <include reference="ziT-qk-KAp"/>
                             </mask>
                         </variation>
                     </view>

@@ -14,11 +14,14 @@
 
 @implementation ViewController
 
+@synthesize countButton;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     startInput = YES;
-    currentValue = 0;
+    sum = 0;
+    num = 0;
 }
 
 -(IBAction)numberBtn:(id)sender{
@@ -26,21 +29,26 @@
     UIButton *b = (UIButton*) sender;
     if(startInput){
         
-        if(b.tag == 1)return;
+        if(b.tag == 0)return;
         labelText.text = [NSString stringWithFormat:@"%d", b.tag];
         startInput = NO;
-        
-        NSLog(@"%@", b);
     }
     else{
         
         labelText.text = [NSString stringWithFormat:@"%@%d", labelText.text, b.tag];
     }
+   
+        num = [labelText.text intValue];
+        NSLog(@"押されたボタン:%d", num);
+        
+
 }
 
 -(IBAction)clearbtn:(id)sender{
     
-    currentValue = 0;
+    sum = 0;
+    num = 0;
+    countButton = 0;
     labelText.text = @"0";
     startInput = YES;
 }
@@ -50,37 +58,55 @@
     
     UIButton *b = (UIButton *) sender;
     operation = b.tag;
-    currentValue = [labelText.text intValue];
     startInput = YES;
+    self.countButton ++;
+    NSLog(@"カウントボタン:%d", countButton);
+    NSLog(@"どの演算子?%d", b.tag);
     
-    if (operation == 11){
-        currentValue += [labelText.text intValue];
-    }else if (operation == 10){
-        currentValue -= [labelText.text intValue];
-    }else if (operation == 12){
-        currentValue *= [labelText.text intValue];
-    }else if (operation == 13){
-        currentValue /= [labelText.text intValue];
+    if(countButton == 1){
+        sum = num;
+        labelText.text = [NSString stringWithFormat:@"%d",sum];
+        startInput = YES;
+    }else{
+        NSLog(@"計算実行");
+        if (operation == 11){
+            sum = sum + num;
+            labelText.text = [NSString stringWithFormat:@"%d",sum];
+            NSLog(@"たした数字：%d", num);
+        }else if (operation == 10){
+            NSLog(@"ひいた数字：%d", num);
+                sum = sum - num;
+            labelText.text = [NSString stringWithFormat:@"%d",sum];
+        }else if (operation == 12){
+            NSLog(@"かけた数字:%d", num);
+            sum = sum * num;
+            labelText.text = [NSString stringWithFormat:@"%d",sum];
+        }else if (operation == 13){
+            NSLog(@"わった数字：%d", num);
+            sum = sum / num;
+            labelText.text = [NSString stringWithFormat:@"%d",sum];
+        }
+        
     }
-    
-
     
 }
 
 -(IBAction)equalbtn:(id)sender{
+
+    NSLog(@"計算実行");
     
-  
     if (operation == 11){
-        currentValue += [labelText.text intValue];
+        sum = sum + num;
+        NSLog(@"%d", sum);
     }else if (operation == 10){
-        currentValue -= [labelText.text intValue];
+        sum = sum - num;
     }else if (operation == 12){
-        currentValue *= [labelText.text intValue];
+        sum = sum * num;
     }else if (operation == 13){
-        currentValue /= [labelText.text intValue];
+        sum = sum / num;
     }
     
-    labelText.text = [NSString stringWithFormat:@"%d",currentValue];
+    labelText.text = [NSString stringWithFormat:@"%d",sum];
     startInput = YES;
         
     NSLog(@"%@", labelText.text);

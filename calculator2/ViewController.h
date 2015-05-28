@@ -12,8 +12,9 @@
     
     IBOutlet UILabel *labelText;
     BOOL startInput;
-    int currentValue;
+    int sum;
     int operation;
+    int num;
     
 }
 
@@ -22,6 +23,8 @@
 -(IBAction)clearbtn:(id)sender;
 -(IBAction)optionbtn:(id)sender;
 -(IBAction)equalbtn:(id)sender;
+@property (nonatomic, assign) NSInteger countButton;
+
     
 
 
