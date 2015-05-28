@@ -54,7 +54,8 @@
    
         num = [labelText.text intValue];
         NSLog(@"押されたボタン:%d", num);
-        
+    
+    
 
 }
 
@@ -71,7 +72,6 @@
     
     
     UIButton *b = (UIButton *) sender;
-    operation = b.tag;
     startInput = YES;
     self.countButton ++;
     NSLog(@"カウントボタン:%d", countButton);
@@ -79,6 +79,8 @@
     
     if(countButton == 1){
         sum = num;
+        operation = b.tag;
+        
         labelText.text = [NSString stringWithFormat:@"%d",sum];
         startInput = YES;
     }else{
@@ -87,18 +89,22 @@
             sum = sum + num;
             labelText.text = [NSString stringWithFormat:@"%d",sum];
             NSLog(@"たした数字：%d", num);
+            operation = b.tag;
         }else if (operation == 10){
             NSLog(@"ひいた数字：%d", num);
-                sum = sum - num;
+                sum = num - sum;
             labelText.text = [NSString stringWithFormat:@"%d",sum];
+            operation = b.tag;
         }else if (operation == 12){
             NSLog(@"かけた数字:%d", num);
-            sum = sum * num;
+            sum = num * sum;
             labelText.text = [NSString stringWithFormat:@"%d",sum];
+            operation = b.tag;
         }else if (operation == 13){
             NSLog(@"わった数字：%d", num);
             sum = sum / num;
             labelText.text = [NSString stringWithFormat:@"%d",sum];
+            operation = b.tag;
         }
         
     }
