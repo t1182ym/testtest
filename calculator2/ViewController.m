@@ -53,6 +53,18 @@
     currentValue = [labelText.text intValue];
     startInput = YES;
     
+    if (operation == 11){
+        currentValue += [labelText.text intValue];
+    }else if (operation == 10){
+        currentValue -= [labelText.text intValue];
+    }else if (operation == 12){
+        currentValue *= [labelText.text intValue];
+    }else if (operation == 13){
+        currentValue /= [labelText.text intValue];
+    }
+    
+
+    
 }
 
 -(IBAction)equalbtn:(id)sender{
