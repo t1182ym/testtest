@@ -22,7 +22,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-75" y="28" width="368" height="52"/>
+                                    <rect key="frame" x="-78" y="60" width="368" height="52"/>
                                 </variation>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHk-kz-FMt">
@@ -89,7 +89,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="305" width="30" height="30"/>
+                                    <rect key="frame" x="263" y="321" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="optionbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Eb-Np-b9w"/>
@@ -103,7 +103,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="219" width="30" height="30"/>
+                                    <rect key="frame" x="263" y="235" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="optionbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zvl-qW-rvw"/>
@@ -117,7 +117,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="192" y="305" width="30" height="30"/>
+                                    <rect key="frame" x="192" y="321" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kzd-Fq-TFz"/>
@@ -131,7 +131,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="305" width="30" height="30"/>
+                                    <rect key="frame" x="115" y="321" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xjl-Dm-jGA"/>
@@ -145,7 +145,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="305" width="30" height="30"/>
+                                    <rect key="frame" x="34" y="321" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RyX-O5-9MG"/>
@@ -159,7 +159,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="219" width="30" height="30"/>
+                                    <rect key="frame" x="34" y="238" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d03-7A-r8c"/>
@@ -173,7 +173,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="219" width="30" height="30"/>
+                                    <rect key="frame" x="115" y="238" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y6e-Ad-asc"/>
@@ -187,7 +187,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="192" y="219" width="30" height="30"/>
+                                    <rect key="frame" x="192" y="238" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z8L-bk-I5j"/>
@@ -235,7 +235,7 @@
                                     <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y1J-KW-d2V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziT-qk-KAp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L20-KJ-Uxa">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="0">
@@ -246,7 +246,7 @@
                                     <rect key="frame" x="34" y="475" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jvL-el-lKf"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uRH-e7-lhX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,7 +269,7 @@
                                 <exclude reference="jfz-Zi-SbU"/>
                                 <exclude reference="3KR-SB-4wL"/>
                                 <exclude reference="YTz-yj-N8y"/>
-                                <exclude reference="ziT-qk-KAp"/>
+                                <exclude reference="L20-KJ-Uxa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -290,7 +290,7 @@
                                 <include reference="jfz-Zi-SbU"/>
                                 <include reference="3KR-SB-4wL"/>
                                 <include reference="YTz-yj-N8y"/>
-                                <include reference="ziT-qk-KAp"/>
+                                <include reference="L20-KJ-Uxa"/>
                             </mask>
                         </variation>
                     </view>

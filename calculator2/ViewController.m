@@ -29,9 +29,23 @@
     UIButton *b = (UIButton*) sender;
     if(startInput){
         
+        if(countButton == 0){
+        
         if(b.tag == 0)return;
-        labelText.text = [NSString stringWithFormat:@"%d", b.tag];
+       
+            labelText.text = [NSString stringWithFormat:@"%d", b.tag];
         startInput = NO;
+            
+        
+        }
+        
+        else{
+            
+            labelText.text = [NSString stringWithFormat:@"%d", b.tag];
+            startInput = NO;
+            
+        }
+        
     }
     else{
         
