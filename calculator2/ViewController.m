@@ -17,18 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    startInput	 = YES;
+    startInput = YES;
     currentValue = 0;
 }
 
--(IBAction)numberBtn:(id)sender{
+-(IBAction)numberbtn:(id)sender{
     
     UIButton *b = (UIButton*) sender;
     if(startInput){
         
-        if(b.tag == 0) return;
+        if(b.tag == 1)return;
         LabelText.text = [NSString stringWithFormat:@"%d", b.tag];
         startInput = NO;
+        
+        NSLog(@"%@", b);
     }
     else{
         
@@ -36,7 +38,7 @@
     }
 }
 
--(IBAction)clearResult:(id)sender:(id)sender{
+-(IBAction)clearbtn:(id)sender{
     
     currentValue = 0;
     LabelText.text = @"0";
@@ -55,7 +57,8 @@
 
 -(IBAction)equalbtn:(id)sender{
     
-    if(operation == 11){
+  
+    if (operation == 11){
         currentValue += [LabelText.text intValue];
     }else if (operation == 10){
         currentValue -= [LabelText.text intValue];
@@ -67,6 +70,8 @@
     
     LabelText.text = [NSString stringWithFormat:@"%d",currentValue];
     startInput = YES;
+        
+    NSLog(@"%@", LabelText.text);
     
 }
 

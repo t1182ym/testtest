@@ -14,11 +14,12 @@
     BOOL startInput;
     int currentValue;
     int operation;
+    
 }
 
 
--(IBAction)numberBtn:(id)sender;
--(IBAction)clearResult:(id)sender;
+-(IBAction)numberbtn:(id)sender;
+-(IBAction)clearbtn:(id)sender;
 -(IBAction)optionbtn:(id)sender;
 -(IBAction)equalbtn:(id)sender;
     

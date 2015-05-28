@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NX5-aj-v0o">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NX5-aj-v0o">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -25,20 +25,6 @@
                                     <rect key="frame" x="-75" y="28" width="368" height="52"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UII-gd-t2U">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="475" width="78" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uHq-Yx-Uuj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHk-kz-FMt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -249,12 +235,25 @@
                                     <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="42G-b3-prf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSi-A8-htJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="475" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E5S-hb-GUY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NX5-aj-v0o"/>
-                                <exclude reference="UII-gd-t2U"/>
                                 <exclude reference="xHk-kz-FMt"/>
                                 <exclude reference="hfO-RY-CRw"/>
                                 <exclude reference="wq5-fT-r4r"/>
@@ -270,12 +269,12 @@
                                 <exclude reference="jfz-Zi-SbU"/>
                                 <exclude reference="3KR-SB-4wL"/>
                                 <exclude reference="YTz-yj-N8y"/>
+                                <exclude reference="oSi-A8-htJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="NX5-aj-v0o"/>
-                                <include reference="UII-gd-t2U"/>
                                 <include reference="xHk-kz-FMt"/>
                                 <include reference="hfO-RY-CRw"/>
                                 <include reference="wq5-fT-r4r"/>
@@ -291,6 +290,7 @@
                                 <include reference="jfz-Zi-SbU"/>
                                 <include reference="3KR-SB-4wL"/>
                                 <include reference="YTz-yj-N8y"/>
+                                <include reference="oSi-A8-htJ"/>
                             </mask>
                         </variation>
                     </view>
