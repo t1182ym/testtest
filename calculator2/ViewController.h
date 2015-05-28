@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController{
     
-    IBOutlet UILabel *LabelText;
+    IBOutlet UILabel *labelText;
     BOOL startInput;
     int currentValue;
     int operation;

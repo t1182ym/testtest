@@ -27,21 +27,21 @@
     if(startInput){
         
         if(b.tag == 1)return;
-        LabelText.text = [NSString stringWithFormat:@"%d", b.tag];
+        labelText.text = [NSString stringWithFormat:@"%d", b.tag];
         startInput = NO;
         
         NSLog(@"%@", b);
     }
     else{
         
-        LabelText.text = [NSString stringWithFormat:@"%@%d", LabelText.text, b.tag];
+        labelText.text = [NSString stringWithFormat:@"%@%d", labelText.text, b.tag];
     }
 }
 
 -(IBAction)clearbtn:(id)sender{
     
     currentValue = 0;
-    LabelText.text = @"0";
+    labelText.text = @"0";
     startInput = YES;
 }
 
@@ -50,7 +50,7 @@
     
     UIButton *b = (UIButton *) sender;
     operation = b.tag;
-    currentValue = [LabelText.text intValue];
+    currentValue = [labelText.text intValue];
     startInput = YES;
     
 }
@@ -59,19 +59,19 @@
     
   
     if (operation == 11){
-        currentValue += [LabelText.text intValue];
+        currentValue += [labelText.text intValue];
     }else if (operation == 10){
-        currentValue -= [LabelText.text intValue];
+        currentValue -= [labelText.text intValue];
     }else if (operation == 12){
-        currentValue *= [LabelText.text intValue];
+        currentValue *= [labelText.text intValue];
     }else if (operation == 13){
-        currentValue /= [LabelText.text intValue];
+        currentValue /= [labelText.text intValue];
     }
     
-    LabelText.text = [NSString stringWithFormat:@"%d",currentValue];
+    labelText.text = [NSString stringWithFormat:@"%d",currentValue];
     startInput = YES;
         
-    NSLog(@"%@", LabelText.text);
+    NSLog(@"%@", labelText.text);
     
 }
 

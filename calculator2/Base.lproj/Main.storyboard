@@ -295,7 +295,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="LabelText" destination="NX5-aj-v0o" id="iMR-rg-hfL"/>
+                        <outlet property="labelText" destination="NX5-aj-v0o" id="NTg-t6-8et"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
