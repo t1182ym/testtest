@@ -18,7 +18,7 @@
 }
 
 
--(IBAction)numberbtn:(id)sender;
+-(IBAction)numberBtn:(id)sender;
 -(IBAction)clearbtn:(id)sender;
 -(IBAction)optionbtn:(id)sender;
 -(IBAction)equalbtn:(id)sender;

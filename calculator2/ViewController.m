@@ -21,7 +21,7 @@
     currentValue = 0;
 }
 
--(IBAction)numberbtn:(id)sender{
+-(IBAction)numberBtn:(id)sender{
     
     UIButton *b = (UIButton*) sender;
     if(startInput){

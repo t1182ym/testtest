@@ -36,7 +36,7 @@
                                     <rect key="frame" x="115" y="401" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gfg-wf-E5z"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jyb-Il-hd0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfO-RY-CRw">
@@ -50,7 +50,7 @@
                                     <rect key="frame" x="192" y="401" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UGL-ah-lnQ"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ivf-sf-Abf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq5-fT-r4r">
@@ -120,7 +120,7 @@
                                     <rect key="frame" x="192" y="305" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8V7-MY-IaQ"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kzd-Fq-TFz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLv-z7-9Rv">
@@ -134,7 +134,7 @@
                                     <rect key="frame" x="115" y="305" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8cf-66-zMI"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xjl-Dm-jGA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-TB-hBe">
@@ -148,7 +148,7 @@
                                     <rect key="frame" x="34" y="305" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="l19-Bp-ZpH"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RyX-O5-9MG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4di-TJ-4KL">
@@ -162,7 +162,7 @@
                                     <rect key="frame" x="34" y="219" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f6j-oY-phP"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d03-7A-r8c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-x9-E0Y">
@@ -176,7 +176,7 @@
                                     <rect key="frame" x="115" y="219" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="liO-7n-hxo"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y6e-Ad-asc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yL-GA-oTv">
@@ -190,7 +190,7 @@
                                     <rect key="frame" x="192" y="219" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OSs-rg-RDd"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z8L-bk-I5j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Zi-SbU">
@@ -232,7 +232,7 @@
                                     <rect key="frame" x="34" y="401" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="42G-b3-prf"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y1J-KW-d2V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSi-A8-htJ">
@@ -246,7 +246,7 @@
                                     <rect key="frame" x="34" y="475" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numberbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E5S-hb-GUY"/>
+                                    <action selector="numberBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iQ6-UJ-PDo"/>
                                 </connections>
                             </button>
                         </subviews>
