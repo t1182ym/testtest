@@ -81,6 +81,10 @@
     isAnswered = NO;
     NSLog(@"計算まだされてないよ" , isAnswered = NO);
     
+    
+    labelText.adjustsFontSizeToFitWidth = YES;
+    
+    
     }
 
 
