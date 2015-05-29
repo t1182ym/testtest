@@ -15,6 +15,7 @@
     int sum;
     int operation;
     int num;
+    bool isAnswered;
     
 }
 
