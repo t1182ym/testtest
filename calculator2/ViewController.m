@@ -34,15 +34,46 @@
     
         UIButton *b = (UIButton*) sender;
         if(startInput){
+            NSLog(@"スタートインプットなう");
+            
+                if(countButton == 0){
         
                 if(b.tag == 0) return;
                 labelText.text = [NSString stringWithFormat:@"%d", b.tag];
                 startInput = NO;
+            
+                }else{
+                    
+                    if( labelText.text == 0){
+                        
+                        if(b.tag == 0) return;
+                        labelText.text = [NSString stringWithFormat:@"%d", b.tag];
+                        startInput = NO;
+                    }else{
+                  
+                
+                    labelText.text = [NSString stringWithFormat:@"%d", b.tag];
+                    startInput = NO;
+            
+                    }
+                }
+        }else{
+            
+            NSLog(@"スタートインプットのー");
+            if( num == 0){
+                
+                if(b.tag == 0) return;
+                labelText.text = [NSString stringWithFormat:@"%d", b.tag];
+                startInput = NO;
+                
+                
+            }else{
+            
+                    labelText.text = [NSString stringWithFormat:@"%@%d", labelText.text, b.tag];
+                    startInput = NO;
             }
-        else{
-        
-                labelText.text = [NSString stringWithFormat:@"%@%d", labelText.text, b.tag];
-            }
+                }
+            
     
     num = [labelText.text intValue];
     NSLog(@"押されたボタン:%d", num);
@@ -60,13 +91,15 @@
     countButton = 0;
     labelText.text = @"0";
     startInput = YES;
+    NSLog(@"カウント0", countButton = 0);
+    
 }
 
 -(IBAction)optionbtn:(id)sender{
     
     
     UIButton *b = (UIButton *) sender;
-    startInput = YES;
+    
     
     
         if(countButton == 0){
@@ -113,7 +146,6 @@
             }else{
         
                 UIButton *b = (UIButton *) sender;
-                startInput = YES;
                 operation = b.tag;
                 NSLog(@"どの演算子か%d", b.tag);
         
@@ -123,6 +155,7 @@
         }
         self.countButton ++;
         NSLog(@"カウントボタン:%d", countButton);
+        startInput = YES;
 }
 
 -(IBAction)equalbtn:(id)sender{
@@ -149,6 +182,7 @@
     labelText.text = [NSString stringWithFormat:@"%d",sum];
     startInput = YES;
     NSLog(@"合計は%@", labelText.text);
+    countButton = 0;
     
 }
 
