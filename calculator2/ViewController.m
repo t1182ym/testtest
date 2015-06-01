@@ -25,8 +25,6 @@
     sum = 0;
     num = 0;
     isAnswered = NO;
-    labelText.layer.masksToBounds = true;
-    labelText.layer.cornerRadius = 10.0;
     
 
 }
@@ -189,12 +187,6 @@
     startInput = YES;
     NSLog(@"合計は%@", labelText.text);
     isAnswered = YES;
-    
-}
-
--(IBAction)delete:(id)sender{
-
-   
     
 }
 

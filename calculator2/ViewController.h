@@ -25,7 +25,6 @@
 -(IBAction)optionbtn:(id)sender;
 -(IBAction)equalbtn:(id)sender;
 @property (nonatomic, assign) NSInteger countButton;
--(IBAction)delete:(id)sender;
 
     
 
