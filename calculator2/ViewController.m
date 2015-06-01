@@ -79,7 +79,7 @@
     NSLog(@"押されたボタン:%d", num);
     
     isAnswered = NO;
-    NSLog(@"計算まだされてないよ" , isAnswered = NO);
+    NSLog(@"計算まだされてないよ" , isAnswered == NO);
     
     
     labelText.adjustsFontSizeToFitWidth = YES;
@@ -186,7 +186,7 @@
     labelText.text = [NSString stringWithFormat:@"%d",sum];
     startInput = YES;
     NSLog(@"合計は%@", labelText.text);
-    countButton = 0;
+    isAnswered = YES;
     
 }
 
